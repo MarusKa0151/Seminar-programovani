@@ -3,7 +3,7 @@ public class TisknemeKruh {
         return polomer * polomer >= x * x + y * y;
     }
 
-    public static void kruh (int polomer) {
+    public static void kresli(int polomer) {
         for (int y = -polomer; y <= polomer; y++) {
             for (int x = -polomer; x <= polomer; x++) {
                 if (vKruhu(x, y, polomer)) {
