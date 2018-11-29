@@ -1,4 +1,8 @@
 public class PocitaciKalendar {
+    /*
+    říká to, jaké bude datum o několik dní později
+    - autor: Vojtěch Horký
+    */
     public static void main(String args[]) {
         if (args.length != 2) {
             awh.Sys.die("Spatne volani.");
