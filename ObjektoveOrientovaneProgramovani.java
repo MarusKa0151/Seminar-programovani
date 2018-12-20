@@ -39,7 +39,7 @@ Různé poznámky
     - lze pracovat stylem "mám objekt, který se umí nakreslit", ale
         nemusím vědět, jak se nakreslí
         nemusím řešit, kam se nakreslí
-    - vytvoření objektu: konstruktor
+    - vytvoření objektu: konstruktor = jmenuje se jako třída
         spousta skryté práce, kterou připraví překladač
 
 Statické atributy a metody
@@ -60,9 +60,11 @@ OOP v Javě
         main() je statická, protože je to tak nejjednodušší
 !       dává smysl i bez existence objektu, zeptám se jestli umí
     - konstruktor: metoda se stejným jménem jako je jméno třídy (bez návratového typu)
-    - this: proměnnou s aktuálním objektem (instancí)
+!   - this: proměnnou s aktuálním objektem (instancí), do konstruktoru, jakoby říká priritu, co to má brát na konec, aby s tím pracoval? 
+        prostě nepojmenovávat parametry jako atributy
     - super: volání na předkovi
 
+!   dobré si vytvořit třídu s užitečnými funkcemi, pak volám např. užitečnéFunkce.faktoriál
     */
     public static void main(String[] args) {
         Kalendar kal = new Kalendar(2015, 11, 12);
