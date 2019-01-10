@@ -107,3 +107,69 @@ OOP v Javě
         return String.format("%04d-%02d-%02d", rok, mesic, den);
     }
 }
+
+
+
+
+
+
+/*
+Balíčky (packages)
+
+    další členění programů (jejich částí) do logických skupin
+        metoda, třída, balíček
+    balíček je určen v záhlaví programu
+
+package mujbalicek;
+public class TridaVMemBalicku {
+}
+
+konvence jmen balíčků
+        malá písmena (třídy začínají velkým písmenem)
+        odvozeny od domovské stránky
+            např. com.google.blablabla
+            pro naše účely můžeme používat např. cz.alej.prog.prijmeni.lekceX
+        (pod)balíčky jsou oddělené tečkou
+            IDE většinou vyžaduje novou vrstvou adresářů
+        pod java. jsou tzv. systémové balíčky (např. Scanner je v java.util)
+    důvody
+        další logické členění
+        prevence kolize jmen
+        organizace souborů na disku
+    pokud balíček uveden není, jde o tzv. default package, který je prázdný
+    používání java.util.Scanner bylo použití třídy Scanner z balíčku java.util
+    ušetření psaní
+        abychom nevypisovali vždy celé jméno balíčku (protože úrovní vnoření je často kolem 5-8)
+        deklarace import na začátku souboru
+
+spuštění souboru Priklad.java - "java cz.alisma.alej.prog.lekceXY.Priklad"
+*/
+
+
+
+
+
+
+/*
+Rozhraní (interface)
+
+    koncept skrytí implementace, vidíme jen vnější chování
+        chci něco, do čeho můžu zapsat výsledek
+            v ten okamžik mě nezajímá, kam se výsledek zapíše
+                disk, obrazovka, síť, ...
+            ani jak je to udělané
+                kde je ten soubor, jestli je to přes TCP nebo UDP, ...
+        metoda chce něco, co umí zapsat výsledek
+            programátor té metody neví, kam to bude
+            při volání se rozhodnu, kam se to zapíše
+    definuje protokol chování
+        jen seznam metod, bez implementace
+ */
+
+
+
+
+ /*
+ EXISTUJÍ I VNOŘENÉ TŘÍDY
+ private static class (má k ní přístup ta hlavní třída, ale už ne ty další, protože je private; mohla by být i public)
+ */
