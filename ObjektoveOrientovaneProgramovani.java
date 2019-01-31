@@ -64,7 +64,7 @@ OOP v Javě
         prostě nepojmenovávat parametry jako atributy
     - super: volání na předkovi
 
-!   dobré si vytvořit třídu s užitečnými funkcemi, pak volám např. užitečnéFunkce.faktoriál
+!   dobré si vytvořit třídu s užitečnými funkcemi, pak volám např. užitečnéFunkce.faktoriál = tohle platí pro třídy ve stejném projektu
     */
     public static void main(String[] args) {
         Kalendar kal = new Kalendar(2015, 11, 12);
@@ -109,10 +109,6 @@ OOP v Javě
 }
 
 
-
-
-
-
 /*
 Balíčky (packages)
 
@@ -147,9 +143,6 @@ spuštění souboru Priklad.java - "java cz.alisma.alej.prog.lekceXY.Priklad"
 
 
 
-
-
-
 /*
 Rozhraní (interface)
 
@@ -164,12 +157,30 @@ Rozhraní (interface)
             při volání se rozhodnu, kam se to zapíše
     definuje protokol chování
         jen seznam metod, bez implementace
+    
+    public interface MyPrinter extends QuadraticEquationPrinter = dává Quadratic... do rozhraní MyPrinter
+    
+    public class HtmlPrinter implements MyPrinter = Html... využívá rozhraní MyPrinter, jen už jim dává určité hodnoty
  */
-
-
 
 
  /*
  EXISTUJÍ I VNOŘENÉ TŘÍDY
  private static class (má k ní přístup ta hlavní třída, ale už ne ty další, protože je private; mohla by být i public)
  */
+
+
+ /* Collections List
+    List<String> novy = new ArrayList<>(); = pole
+    List<String> novy = new LinkedList<>(); = spoják
+    novy.add(prvek) = přidá prvek
+    novy.get(pozice) = vezme prvek na pozici
+
+    Collections Map
+    Map<Character, String> morse = new HashMap<>(); 
+    morse.put("a", ".-"); = přidá dvojici
+    for (char c : s)
+        String code = abeceda.get(c); = vyhledá první znak a dostaneme ten druhý
+    ?morse.keySet() = vypíše to hashMapu?    
+
+  */
