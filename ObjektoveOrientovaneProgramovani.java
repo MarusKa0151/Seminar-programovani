@@ -181,6 +181,30 @@ Rozhraní (interface)
     morse.put("a", ".-"); = přidá dvojici
     for (char c : s)
         String code = abeceda.get(c); = vyhledá první znak a dostaneme ten druhý
-    ?morse.keySet() = vypíše to hashMapu?    
+    morse.containsKey(c) = vrati jestli to je nebo neni uz v mape
+    morse.keySet() = všechny klíče HashMapy   
+  */
 
+
+  /*
+POLYMORFISMUS
+    - polymorfismus: která metoda se zavolá bude určeno až za běhu programu
+    - interně si věc lze představit tak, že překladač přidá ke každému objektu informace o jeho typu (níže dostupné funkcí typeof)
+    a každé polymorfní volání je vlastně série if-ů
+        - ve skutečnosti je použita tzv. tabulka virtuálních metod, která je incializovaná v konstruktoru
+        a na daném místě se použije pouze skok do této tabulky, ale pro přiblížení, jak to na pozadí funguje
+        si můžeme klidně přestavit ty ify
+
+DĚDIČNOST
+    = inheritance
+    - používá se často jrn pro sdílení kódu (předek může používat kód potomka)
+    - dobrá rada: snažte se ji spíše vyhýbat: používejte rozhraí a malé třídy
+    potřebuji reprezentovat geometrické tvary (v závorce jsou atributy vč. zděděných)
+    - příklad:
+    Tvar (x, y, barva)
+        Usecka (x, y, barva -- x2, y2)
+        Krivka (x, y, barva -- ostatní body)
+        Vyplnene (x, y, barva -- barva_vyplne)
+            Kruh (x, y, barva, barva_vyplne -- polomer)
+            Obdelnik (x, y, barva, barva_vyplne -- sirka, vyska)
   */
