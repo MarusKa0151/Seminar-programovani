@@ -208,3 +208,21 @@ DĚDIČNOST
             Kruh (x, y, barva, barva_vyplne -- polomer)
             Obdelnik (x, y, barva, barva_vyplne -- sirka, vyska)
   */
+
+  /*
+OVĚŘOVÁNÍ, ŽE SOFTWARE DĚLÁ TO, CO BY MĚL
+    - formální verifikace
+        kód převedeme na matematický důkaz
+        výpočetně náročné
+        složité na přípravu
+    - testování
+        ověříme, že pro konkrétní vstupy (akce) program funguje
+        je-li bez chyb, neznamená to, že by byl program v pořádku!
+
+UNIT TESTOVÁNÍ
+    - testování jednotlivých metod odděleně od ostatních
+    - píšeme kód, který testuje jednotlivé metody
+    - assert
+        to, co testujeme, očekáváme, že dopadne dobře
+        metoda co bere boolean a pokud je ten false, test končí chybou  
+  */
