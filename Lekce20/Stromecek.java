@@ -1,5 +1,5 @@
 import java.io.File;
-//credits to Horky
+//credits Horky
  
 public class Stromecek {
     public static void main(String[] args) {
