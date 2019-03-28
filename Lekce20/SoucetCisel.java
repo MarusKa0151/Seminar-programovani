@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 //credits to Horky
-/*zachycenÃ­ vÃ½jimky */
+/*zachycení výjimky */
  
 public class SoucetCisel {
  
@@ -18,7 +18,7 @@ public class SoucetCisel {
             }
             sc.close();
             return suma;
-        } catch (IOException e) { //aby nedÄ›lali problÃ©my prÃ¡zdnÃ© soubory, nebo kdyby soubor neexistoval
+        } catch (IOException e) { //aby nedìlali problémy prázdné soubory, nebo kdyby soubor neexistoval
             return 0;
         }
     }

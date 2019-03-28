@@ -1,13 +1,15 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
 //credits Horky
-/*snaÅ¾Ã­me se na testy vybrat pÅ™Ã­pady, kterÃ© by mohly dÄ›lat problÃ©my*/
+/*snaíme se na testy vybrat pøípady, které by mohly dìlat problémy*/
+/*je mozne pouzivat tzv. parametrizovane testy, ktere jsou vyhodne hlavne,
+ *kdyz to chceme testovat na hodne hodnotach a nechceme pro kazdou psat novou promennou*/
  
 public class MathUtilsTest {
  
     @Test
     public void singleNumber() {
-        assertEquals(2, MathUtils.min(2)); //funkce, kterÃ¡ vyhodÃ­ chybu, kdyÅ¾ se nerovnajÃ­
+        assertEquals(2, MathUtils.min(2)); //funkce, která vyhodí chybu, kdy se nerovnají
     }
  
     @Test
