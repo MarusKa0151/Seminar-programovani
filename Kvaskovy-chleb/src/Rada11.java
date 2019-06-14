@@ -117,6 +117,7 @@ public class Rada11 {
 			aktualniIndex += b;
 			return 1;
 		}
+		
 		else if (cislo == 68 & aktualniIndex + Long.valueOf("72723460248141") < zacatekPodretezce) {
 			String a = "72723460248141";
 			long b = Long.parseLong(a);
@@ -412,13 +413,8 @@ public class Rada11 {
 			return 1;
 		}
 		
-
-		
-//dodelat..................................................... dopsat dalsi hodnoty, aby se to zrychlilo
-		
-		
-	
-		
+		//dodelat
+			
 		else if (cislo == 15) {
 			if (zacatekPodretezce <= aktualniIndex & aktualniIndex < zacatekPodretezce + delkaPodretezce) {
 				if (aktualniDelka + 610 < delkaPodretezce) {
