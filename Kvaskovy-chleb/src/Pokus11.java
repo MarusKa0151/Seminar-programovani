@@ -11,10 +11,5 @@ public class Pokus11 {
 		Rada11 rada = new Rada11(retezec, kolikatyKvasek, pocatekPodretezce, delkaPodretezce);
 		//long randomNumber = rada.zJednohoDve(kolikatyKvasek);
 		long randomNumber = rada.zJednohoDveProVetsi(kolikatyKvasek);
-		/*
-		rada.odeberZacatek(pocatekPodretezce);
-		rada.vypisPodretezec(delkaPodretezce);
-		*/
-		
 	}
 }
